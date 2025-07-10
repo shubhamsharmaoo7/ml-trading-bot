@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import joblib, numpy as np
 
 app = Flask(__name__)
-model = joblib.load('xgboost_model.pkl')
+model = joblib.load('xgb_model.pkl')
 
 @app.route('/predict', methods=['POST'])
 def predict():
